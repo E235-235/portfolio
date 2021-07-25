@@ -10,35 +10,14 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
-    width: 100%;
-    height: 100vh;
-    z-index: 0;
     margin: 0;
-}
-
-body:before{
-    content: '';
-    background: inherit;
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);
-    top: -10px;
-    right: -10px;
-    bottom: -10px;
-    left: -10px;
-    position: fixed;
-    z-index: -1;
-    margin: 0;
-    padding: 0;
 }
 
 header{
     text-align: center;
     color: white;
     height: auto;
-    padding-bottom: 20px;
+    padding-top: 25px;
 }
 
 header h3{
@@ -63,13 +42,26 @@ header p{
 
 .aboutme:hover{
     transition: 0.3s ease-out;
-    box-shadow: 0px 0px 20px rgb(36, 36, 36);
+    box-shadow: 0px 0px 20px white;
 }
 
-.Twenty-one, .Twenty, .Nineteen, .Eighteen{
+.Twenty-one, .Twenty, .Nineteen{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.Eighteen{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+
+.contents-container{
+    padding-top: 50px;
+    padding-bottom: -25px;
 }
 
 .contents-container h2{
@@ -89,8 +81,6 @@ header p{
     background-color: white;
     padding: 20px;
     margin: 30px;
-    /* width: 500px;
-    height: 380px; */
     display: inline;
     border-radius: 10px;
     transition: 0.3s ease-out;
@@ -98,7 +88,7 @@ header p{
 
 .contents:hover{
     transition: 0.3s ease-out;
-    box-shadow: 0px 0px 20px rgb(36, 36, 36);
+    box-shadow: 0px 0px 20px white;
 }
 .contents img{
     width: 480px;
@@ -112,19 +102,38 @@ header p{
     margin-bottom: -10px;
 }
 
-.link{
-    text-align: right;
-}
-
 .fl{
     display: none;
-    padding: 5px 100px;
+    padding: 0px 100px;
 }
 
 .fl img{
     width: 480px;
     height: 270px;
-    text-align: center;
+}
+
+.fl-about{
+    display: none;
+    padding: 0px 100px;
+}
+
+.fl-about img{
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+}
+
+.fl-kami{
+    display: none;
+    padding: 0px 100px;
+}
+
+.fl-kami img{
+    width: 480px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
 }
 
 footer{
